@@ -9,7 +9,8 @@ entertainment = ['Music Concert', 'Sight Seeing', 'Watch a Play', 'Visit the Mus
 transportation = ['Moped Scooter', 'Luxury Car', 'Helicopter', 'Horseback', 'Roller Skates']
 
 
-# def generate_trip():
+# random functions key, so that i don't forget.
+
 #     ran_destination = print(random.choice(destinations))
 
 #     ran_restaurants = print(random.choice(restaurants))
