@@ -2,7 +2,7 @@ import random
 
 destinations = ['Las Vegas', 'New York City', 'Orlando', 'Chicago', 'Nashville']
 
-restaurants = ['Pizza Time', 'Taco Tuesday', 'Ramen Bowls', 'Wings Wing Wings', 'Homestyle Cookin']
+restaurants = ['Pizza', 'Tacos', 'Ramen', 'Wings', 'Homestyle Cookin']
 
 entertainment = ['Music Concert', 'Sight Seeing', 'Watch a Play', 'Visit the Museum', 'Amusement Park']
 
@@ -33,7 +33,23 @@ def pick_a_place():
     else:
         print()
 
+def pick_a_food():
+    ran_rest = random.choice(restaurants)
+    if ran_rest == "Pizza":
+        print("It's pizza time!")
+    elif ran_rest == "Tacos":
+        print("Everyday is Taco Tuesday!")
+    elif ran_rest == "Ramen":
+        print("Grab a bowl of ramen.")
+    elif ran_rest == "Wings":
+        print("Can't go wrong with wings!")
+    elif ran_rest == "Homestyle Cookin":
+        print("Soothe your soul with some homestyle cookin'")
+    else:
+        print()
+
 pick_a_place()
+pick_a_food()
 
 
 
