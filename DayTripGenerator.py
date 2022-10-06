@@ -4,7 +4,7 @@ destinations = ['Las Vegas', 'New York City', 'Orlando', 'Chicago', 'Nashville']
 
 restaurants = ['Pizza', 'Tacos', 'Ramen', 'Wings', 'Homestyle Cookin']
 
-entertainment = ['Music Concert', 'Sight Seeing', 'Watch a Play', 'Visit the Museum', 'Amusement Park']
+entertainment = ['Concert', 'Sight Seeing', 'Watch a Play', 'Visit the Museum', 'Amusement Park']
 
 transportation = ['Moped Scooter', 'Luxury Car', 'Helicopter', 'Horseback', 'Roller Skates']
 
@@ -49,8 +49,38 @@ def pick_a_food():
     else:
         print()
 
+def pick_a_ent():
+    ran_ent = random.choice(entertainment)
+    if ran_ent == "Concert":
+        print("Vibe out at a concert.")
+    elif ran_ent == "Sight Seeing":
+        print("Check out the sights!")
+    elif ran_ent == "Watch a Play":
+        print("Look! It's a marquee, enjoy a play!")
+    elif ran_ent == "Visit a Museum":
+        print("Expand your mind at the museum!")
+    elif ran_ent == "Amusement Park":
+        print("Get your thrills at the amusement park!")
+    else:
+        print()
+
+def pick_a_tran():
+    ran_tran = random.choice(transportation)
+    if ran_tran == "Moped Scooter":
+        print("Feel the breeze on a moped!")
+    elif ran_tran == "Luxury Car":
+        print("Get flashy in a luxury car!")
+    elif ran_tran == "Helicopter":
+        print("Take to the sky in a helicopter!")
+    elif ran_tran == "Horseback":
+        print("Giddy up! Go on horseback!")
+    elif ran_tran == "Roller Skates":
+        print("Glide on by on some roller skates!")
+    else:
+        print()
+
 pick_a_place()
 pick_a_food()
-
-
+pick_a_ent()
+pick_a_tran()
 
