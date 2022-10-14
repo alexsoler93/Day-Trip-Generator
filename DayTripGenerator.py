@@ -85,7 +85,17 @@ def make_a_trip():
     pick_a_ent()
     pick_a_tran()
 
-make_a_trip()
+def r_u_satisfied():
+    satisfaction_answer = input("Are you happy with your trip? y/n ")
+    
+    if satisfaction_answer == "y":
+        print("Enjoy your trip!")
+    elif satisfaction_answer == "n":
+        make_a_trip()
+    else:
+        print("answer not applicable")
+
+r_u_satisfied()
 pick_a_place()
 pick_a_food()
 pick_a_ent()
