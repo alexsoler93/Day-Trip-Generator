@@ -79,6 +79,13 @@ def pick_a_tran():
     else:
         print()
 
+def make_a_trip():
+    pick_a_place()
+    pick_a_food()
+    pick_a_ent()
+    pick_a_tran()
+
+make_a_trip()
 pick_a_place()
 pick_a_food()
 pick_a_ent()
