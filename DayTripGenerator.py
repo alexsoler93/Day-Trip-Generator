@@ -84,6 +84,7 @@ def make_a_trip():
     pick_a_food()
     pick_a_ent()
     pick_a_tran()
+    r_u_satisfied()
 
 def r_u_satisfied():
     satisfaction_answer = input("Are you happy with your trip? y/n ")
@@ -95,9 +96,11 @@ def r_u_satisfied():
     else:
         print("answer not applicable")
 
-r_u_satisfied()
-pick_a_place()
-pick_a_food()
-pick_a_ent()
-pick_a_tran()
+def run_generator():
+    pick_a_place()
+    pick_a_food()
+    pick_a_ent()
+    pick_a_tran()
+    r_u_satisfied()
 
+run_generator()
